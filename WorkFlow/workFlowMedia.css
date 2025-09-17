@@ -1,0 +1,22 @@
+@media screen and (max-width: 600px) {
+    .navbar {
+    width: 97vw;
+    margin: 4px 0px;
+    height: 45px;
+    border-radius: 10px;
+  }
+  .logo {
+    width: 75px;
+    margin-right: 5px;
+  }
+  .nav-links a {
+    font-size: 10px;
+    font-weight: 500;
+  }
+  .nav-links a.active{
+    font-weight: 100;
+  }
+  .how-it-works img {
+    margin-left: 20px;
+}
+}
