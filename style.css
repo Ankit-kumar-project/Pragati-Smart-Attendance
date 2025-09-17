@@ -114,7 +114,7 @@ body {
   border: none;
   border-radius: 12px;
   background: #69727e1c;
-  color: #22f9f51c;
+  color: #00e9ff;
   font-size: 15px;
   outline: none;
   transition: box-shadow 0.25s ease;
@@ -149,12 +149,12 @@ body {
 
 .options {
   margin-top: 12px;
-  color:#b5807c;
+  color:#c42a1f;
   text-align: center;
   font-size: 14px;
 }
 .options a {
-  color: #52a5ee;
+  color: #eef5f7;
   text-decoration: none;
 }
 .options a:hover {
