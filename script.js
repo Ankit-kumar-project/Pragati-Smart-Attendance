@@ -27,7 +27,7 @@ document.getElementById('loginForm').addEventListener('submit', e => {
   if (!u || !p) return alert('⚠ Please fill in all fields!');
   if (p.length < 6) return alert('⚠ Password must be at least 6 characters!');
   alert('✅ Login successful!');
-  window.location.href = "./home.html";
+  window.location.href = "./Home Page/Home.html";
 });
 
 // Sign Up validation
