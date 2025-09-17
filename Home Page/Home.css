@@ -106,50 +106,6 @@ footer {
   text-decoration: none;
   font-weight: bold;
 }
-/* feature page styling */
-
-.features {
-  padding: 40px 20px;
-  max-width: 1000px;
-  margin: auto;
-}
-
-.features ul {
-  list-style: none;
-  padding: 0;
-}
-
-.features li {
-  background: #1c1c2b;
-  margin: 10px 0;
-  padding: 15px;
-  border-radius: 8px;
-}
-
-.features li:hover {
-  box-shadow: 0px 0px 8px aqua;
-}
-
-
-/* WorkFlow page styling */
-
-
-.how-it-works {
-  padding: 40px 20px;
-  text-align: center;
-}
-.how-it-works h2 {
-  font-size: 40px;
-}
-.how-it-works p {
-  padding: 20px;
-}
-.how-it-works img {
-  margin-top: 20px;
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 245, 255, 0.5);
-}
-
 
 /* Contact page styling */
 
