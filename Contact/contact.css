@@ -75,7 +75,7 @@ body {
   align-self: center;
   flex-direction: column;
   width: 20vw;
-  height: 43vh;
+  height: 50vh;
   background: linear-gradient(135deg, #655050, #051b2c);
   align-items: center;
   gap: 15px;
@@ -98,7 +98,7 @@ body {
 }
 
 .contact button {
-  padding: 18px 20px;
+  padding: 18px 18px;
   width: 18vw;
   background: linear-gradient(45deg, rgb(15, 255, 255), rgb(28, 79, 206));
   color: #ffd105;
