@@ -67,7 +67,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 40px;
+  gap: 60px;
 }
 
 .features li {
@@ -75,8 +75,8 @@ body {
   justify-content: center;
   align-items: center;
   background: #1c1c2b;
-  height: 475px;
-  width: 475px;
+  height: 430px;
+  width: 430px;
   border-radius: 50%;
   position: relative;
   overflow: hidden;
