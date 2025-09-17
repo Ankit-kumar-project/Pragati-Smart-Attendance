@@ -1,0 +1,39 @@
+@media screen and (max-width: 600px) {
+
+    /* for home page */
+  .how-it-works img {
+    margin-left: 47px;
+    width: 80vw;
+  }
+  .how-it-works h2 {
+    margin-left: 48px;
+  }
+  .feature{
+    padding: 20px 20px;
+  }
+  .feature-card {
+    margin-left: 48px;
+  }
+  .navbar {
+    width: 98vw;
+    margin: 4px 0px;
+    height: 45px;
+    border-radius: 10px;
+  }
+  .logo {
+    width: 75px;
+    margin-right: 5px;
+  }
+  .nav-links a {
+    font-size: 10px;
+    font-weight: 500;
+  }
+  .hero{
+        width: 101vw;
+        margin-top: 27px
+  }
+  footer{
+    margin-bottom: 60px;
+  }
+  
+}
