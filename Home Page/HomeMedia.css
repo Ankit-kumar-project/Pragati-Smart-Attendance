@@ -1,6 +1,5 @@
 @media screen and (max-width: 600px) {
-
-    /* for home page */
+  /* for home page */
   .how-it-works img {
     margin-left: 47px;
     width: 80vw;
@@ -8,7 +7,7 @@
   .how-it-works h2 {
     margin-left: 48px;
   }
-  .feature{
+  .feature {
     padding: 20px 20px;
   }
   .feature-card {
@@ -28,12 +27,11 @@
     font-size: 10px;
     font-weight: 500;
   }
-  .hero{
-        width: 101vw;
-        margin-top: 27px
+  .hero {
+    width: 101vw;
+    margin-top: 27px;
   }
-  footer{
+  footer {
     margin-bottom: 60px;
   }
-  
 }
