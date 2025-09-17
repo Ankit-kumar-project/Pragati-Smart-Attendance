@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PRAGATI | Login & Sign Up</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container" id="container">
+  <div class="header">
+    <img src="./Assets/logo.png" alt="" class="logo">
+    <button id="toggleBtn">Go to Sign Up</button>
+  </div>
+
+  <div class="slider">
+    <!-- Login -->
+    <div class="pane">
+      <form class="form-card" id="loginForm">
+        <h2>Login</h2>
+        <div class="input-group">
+          <input type="text" id="loginUsername" placeholder="Username" required>
+        </div>
+        <div class="input-group">
+          <input type="password" id="loginPassword" placeholder="Password" required>
+        </div>
+        <button type="submit" class="btn">Login</button>
+        <div class="options">
+          <p>Forgot <a href="#">Password?</a></p>
+          <p>New here? <a href="#" id="inlineSignup">Create account</a></p>
+        </div>
+      </form>
+    </div>
+
+    <!-- Sign Up -->
+    <div class="pane">
+      <form class="form-card" id="signupForm">
+        <h2>Create Account</h2>
+        <div class="input-group">
+          <input type="text" id="fullname" placeholder="Full Name" required>
+        </div>
+        <div class="input-group">
+          <input type="email" id="email" placeholder="Email" required>
+        </div>
+        <div class="input-group">
+          <input type="text" id="signupUsername" placeholder="Username" required>
+        </div>
+        <div class="input-group">
+          <input type="password" id="signupPassword" placeholder="Password" required>
+        </div>
+        <div class="input-group">
+          <input type="password" id="confirmPassword" placeholder="Confirm Password" required>
+        </div>
+        <button type="submit" class="btn">Sign Up</button>
+        <div class="options">
+          <p>Already have an account? <a href="#" id="inlineLogin">Login</a></p>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
