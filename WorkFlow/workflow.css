@@ -3,10 +3,15 @@
   text-align: center;
 }
 body {
-  margin: 0px;
-  font-family: Arial, sans-serif;
   background: #0f0f0f;
-  color: #fff;
+  font-family: Arial, sans-serif;
+  display: flex;
+
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  color: white;
 }
 .logo {
   width: 100px;
@@ -18,10 +23,15 @@ body {
   text-align: center;
 }
 .how-it-works h2 {
-  font-size: 40px;
+  font-size: 80px;
+  background: linear-gradient(45deg, rgb(12 180 251), rgb(82 255 25));
+  background-clip: text;
+  color: transparent;
 }
 .how-it-works p {
+  font-size: 24px;
   padding: 20px;
+  margin-bottom: 60px;
 }
 .how-it-works img {
   margin-top: 20px;
@@ -33,6 +43,8 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  width: 97%;
+  border-radius: 10px;
   background: #1a1a2e;
   padding: 15px 30px;
   color: #fff;
@@ -54,6 +66,7 @@ body {
   color: #fff;
   text-decoration: none;
   font-weight: 500;
+  font-size: 20px;
   transition: color 0.3s;
 }
 
@@ -66,4 +79,77 @@ body {
   padding: 6px;
   border: 2px solid #40bbec;
   border-radius: 4px;
+}
+
+.workflow {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  position: relative;
+}
+
+.step {
+  background: rgba(255, 255, 255, 0.08);
+  padding: 20px 30px;
+  margin: 13px;
+  font-size: 30px;
+  border-radius: 15px;
+  backdrop-filter: blur(8px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  position: relative;
+  animation: fadeInUp 1s ease forwards;
+  opacity: 0;
+}
+
+.step:nth-child(1) {
+  animation-delay: 0.2s;
+}
+.step:nth-child(2) {
+  animation-delay: 0.4s;
+}
+.step:nth-child(3) {
+  animation-delay: 0.6s;
+}
+.step:nth-child(4) {
+  animation-delay: 0.8s;
+}
+
+.step::before {
+  content: "";
+  position: absolute;
+  top: -65px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 5px;
+  height: 66px;
+  background: linear-gradient(to bottom, #00f5a0, #00d9f5);
+  box-shadow: 0 0 4px 2px #567952;
+  animation: pulse 2s infinite;
+}
+
+.step:first-child::before {
+  display: none;
+}
+
+/* Animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 1;
+  }
 }
