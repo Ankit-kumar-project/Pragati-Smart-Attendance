@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Real-Time Dashboard & Reporting</title>
+  <link rel="stylesheet" href="../Datashow/Datashow.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="brand">
+      <div class="dot"></div>
+      <h1>Real-Time Dashboard & Reporting</h1>
+    </div>
+    <div class="status-badges">
+      <span id="live-status" class="badge live">LIVE</span>
+      <span id="offline-status" class="badge offline hidden">Offline</span>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="card chart-card">
+      <h2>Attendance Overview</h2>
+      <canvas id="attendanceChart"></canvas>
+    </section>
+
+    <section class="card chart-card">
+      <h2>Performance Over Time</h2>
+      <canvas id="performanceChart"></canvas>
+    </section>
+
+    <section class="card table-card">
+      <h2>Summary Report</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Metric</th>
+            <th>Today</th>
+            <th>This Week</th>
+            <th>This Month</th>
+          </tr>
+        </thead>
+        <tbody id="report-body">
+          <tr>
+            <td>Attendance %</td>
+            <td>—</td>
+            <td>—</td>
+            <td>—</td>
+          </tr>
+          <tr>
+            <td>Late Arrivals</td>
+            <td>—</td>
+            <td>—</td>
+            <td>—</td>
+          </tr>
+          <tr>
+            <td>Absentees</td>
+            <td>—</td>
+            <td>—</td>
+            <td>—</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <span>Pragati - Live Analytics</span>
+    <button id="goBack"><a href="../Feature/Feature.html">Go Back</a></button>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="../Datashow/Datashow.js"></script>
+</body>
+</html>
