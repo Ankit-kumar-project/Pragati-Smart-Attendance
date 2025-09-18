@@ -1,0 +1,82 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#0b0f1a" />
+  <title>Offline Mode — Photo Reader</title>
+  <link rel="stylesheet" href="../ScanPage/scanPage.css" />
+  <link rel="manifest" href="manifest.webmanifest" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="brand">
+      <div class="dot"></div>
+      <h1>Photo Reader</h1>
+    </div>
+    <div class="status">
+      <span id="network-badge" class="badge">Checking…</span>
+      <span id="pwa-badge" class="badge hidden">Installed</span>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="card">
+      <h2>Scan an image</h2>
+      <p class="muted">Drag & drop, paste, or upload an image. Then click “Scan image”.</p>
+
+      <div id="dropzone" class="dropzone" tabindex="0" aria-label="Image drop zone">
+        <input id="file-input" type="file" accept="image/*" hidden />
+        <div class="dropzone-inner">
+          <div class="scanner-anim" aria-hidden="true"></div>
+          <div class="dz-content">
+            <button id="browse-btn" class="btn ghost" type="button">Choose image</button>
+            <span class="dz-hint">or drop here / paste (Ctrl+V)</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="preview-row">
+        <img id="preview" class="preview hidden" alt="Selected image preview" />
+      </div>
+
+      <div class="actions">
+        <button id="scan-btn" class="btn primary" disabled>Scan image</button>
+        <button id="clear-btn" class="btn" disabled>Clear</button>
+      </div>
+
+      <div id="progress" class="progress hidden" aria-live="polite">
+        <div class="bar" id="progress-bar" style="width: 0%"></div>
+        <div class="progress-text" id="progress-text">Preparing…</div>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>Extracted text</h2>
+      <p class="muted">All recognized text appears below. You can copy or refine later.</p>
+      <textarea id="output" class="output" rows="10" placeholder="No text yet…" readonly></textarea>
+
+      <details class="blocks">
+        <summary>View blocks with confidence</summary>
+        <div id="blocks-list" class="blocks-list"></div>
+      </details>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-left">
+      <span>Pragati -  Photo Reader</span>
+      <div><button id="goBack"><a href="../Feature/Feature.html">Go Back</a></button></div>
+    </div>
+    <div class="footer-right">
+      <button id="install-btn" class="btn small ghost hidden">Install app</button>
+      <a class="btn small ghost" href="#" onclick="location.reload()">Reload</a>
+    </div>
+  </footer>
+
+  <!-- Online by default via CDN (simple start). For full offline: serve locally, see app.js comments -->
+  <script src="https://cdn.jsdelivr.net/npm/tesseract.js@2/dist/tesseract.min.js"></script>
+  <script src="../ScanPage/scanPage.js"></script>
+</body>
+</html>
